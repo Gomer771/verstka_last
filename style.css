@@ -89,7 +89,6 @@ li {
 h2, h3 {
     font-family: "Fraunces", serif;
     font-weight: 400;
-    margin: 0;
 }
 .features-title {
     font-size: 25px;
@@ -133,76 +132,11 @@ h2, h3 {
     border: 1px solid #C2CDD8;
     border-left-style: none;
     border-right-style: none;
-    padding: 17px 0 9px 0;
     margin-bottom: 1px;
     display: flex;
-    justify-content: space-between;
 }
 .care-info-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.care-block-img {
-    display: flex;
-    align-items: start;
-}
-
-.about {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin: 120px auto;
-}
-.about-title {
-    font-size: 41px;
-    width: 250px;
-}
-.about-block {
-    display: flex;
-    align-items: end;
-    width: 730px;
-}
-.about-block-item:nth-child(2) {
-    margin: 0 32px;
-}
-.about-block-item h3 {
-    font-size: 25px;
-}
-.about-block-item p {
-    line-height: 24px;
-    letter-spacing: 0.2px;
-}
-
-.track {
-    background-color: #0070A0;
-    padding: 80px 0;
-    color: #FFFFFF;
-    
-}
-.track-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 200;
-}
-.track-block-info h2 {
-    font-size: 42px;
-    margin-bottom: 21px;
-    width: 350px;
-}
-.track-block-info p {
-    font-size: 18px;
-    margin-bottom: 17px;
-    width: 480px;
-}
-.track-block-list li:nth-child(2) {
-    margin: 11px 0;
-}
-.track-block-list li {
-    list-style-image: url(assets/mark.svg);
-}
-.track-block-list {
-    padding-left: 25px;
-    margin-bottom: 27px;
 }
