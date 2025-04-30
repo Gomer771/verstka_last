@@ -7,196 +7,255 @@ body {
     max-width: 1130px;
     margin: 0 auto;
 }
-.header-flex {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-left {
+.left-flex {
     display: flex;
     align-items: center;
 }
-.header-left img {
+.logo {
     margin-right: 36px;
+}
+.nav-flex a {
+    margin-right: 24px;
 }
 a {
     text-decoration: none;
     color: #33383F;
 }
-.header-links a {
-    margin-right: 24px;
-    font-size: 15px;
-}
 .sing-in {
     color: #0070A0;
-    border: none;
     background: none;
-    font-size: 15px;
-}
-.sign-in-header {
-    margin-right: 31px;
+    border: none;
 }
 .demo {
     color: #FFFFFF;
-    background: #0070A0;
+    background-color: #0070A0;
     padding: 6px 20px;
     border: none;
-    font-size: 15px;
-}
-h1, h3, h2 {
-    font-family: "Fraunces", serif;
-    margin: 0;
+    font-family: "Inter", sans-serif;
 }
 h1 {
+    font-family: "Fraunces", serif;
     font-size: 58px;
-    font-weight: 300;
-    margin: 0 0 24px 0;
+    font-weight: 400;
+    color: #1F1F1F;
 }
 .main-info-text {
     font-size: 20px;
-    width: 380px;
-    margin: 0 0 32px 0;
+    color: #1F1F1F;
 }
-.main-info-buttons::after {
-    content: url(assets/arrow.svg);
+.main-info-buttons {
+    display: flex;
+    align-items: center;
 }
 .main-info {
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
     align-items: center;
+    margin: 70px auto 120px auto;
 }
 .main-info-left {
-    width: 485px;
+    width: 525px;
 }
-.supporters-text {
-    margin: 0 auto 25px auto;
+.companies-text {
+    margin: 0 auto;
     width: fit-content;
     font-size: 24px;
+    margin-bottom: 25px;
 }
-.supporters {
-    margin: 130px auto 160px auto;
+li {
+    list-style-type: none;
 }
-.supporters-companies {
+.companies-list {
     display: flex;
     justify-content: center;
 }
-.supporters-companies img {
-    margin-left: 62px;
+.companies-list li {
+    margin-right: 62px;
 }
-.description-title {
-    font-size: 25px;
-    margin: 13px 0;
-}
-.description {
-    display: flex;
-}
-.description-fast {
-    background-color: #FAEA73;
-}
-.description-buck {
-    background-color: #CCEFF6;
-    margin: 0 32px;
-}
-.description-safe {
-    background-color: #F7CEDC;
-}
-.description div {
-    padding: 32px 35px 40px 32px;
-}
-
 .features {
-    background-color: #F7F9FA;
-}
-.features-title {
-    font-size: 40px;
-    width: 630px;
-    letter-spacing: 0.2px;
-    padding-top: 79px;
-    margin-bottom: 0;
-}
-.features-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 162px;
+    margin-bottom: 120px;
 }
-.features-item {
+.features div {
+    padding: 32px 32px 40px 32px;
+    width: 291px;
+}
+h2, h3 {
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+    margin: 0;
+}
+.features-title {
+    font-size: 25px;
+}
+.features-fast {
+    background-color: #FAEA73;
+}
+.features-buck {
+    background-color: #CCEFF6;
+}
+.features-safe {
+    background-color: #F7CEDC;
+}
+.care {
+    background-color: #F7F9FA;
+}
+.care-title {
+    font-size: 40px;
+    width: 630px;
+    margin-bottom: 60px;
+    padding-top: 80px;
+    font-weight: 500;
+}
+.care-block-title {
+    font-size: 21px;
+}
+.care-block-info {
+    margin-left: 21px;
+}
+.care-button::after {
+    content: url(assets/arrow-down.svg);
+}
+.care-button {
+    height: fit-content;
+    border: none;
+    background: none;
+    margin-top: 15px;
+}
+.care-block {
+    width: 450px;
     border: 1px solid #C2CDD8;
-    border-left: none;
-    border-right: none;
+    border-left-style: none;
+    border-right-style: none;
     padding: 17px 0 9px 0;
     margin-bottom: 1px;
     display: flex;
     justify-content: space-between;
-    align-items: start;
 }
-.features-item-text {
-    margin: 0 0 18px 21px;
-    font-size: 21px;
+.care-info-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.features-item-text p {
-    width: 340px;
-}
-.features-item button {
-    border: none;
-    background: none;
-}
-.features-item-block {
+.care-block-img {
     display: flex;
     align-items: start;
 }
 
 .about {
-    margin: 119px auto;
     display: flex;
     justify-content: space-between;
     align-items: start;
+    margin: 120px auto;
 }
 .about-title {
-    font-size: 42px;
-    line-height: 50px;
-    letter-spacing: 0.5px;
-    width: 270px;
+    font-size: 41px;
+    width: 250px;
 }
 .about-block {
     display: flex;
     align-items: end;
     width: 730px;
 }
-.about-block-item:nth-child(2){
+.about-block-item:nth-child(2) {
     margin: 0 32px;
 }
-.about-block-item h3 {
-    font-size: 25px;
-    margin: 15px 0 13px 0;
+.about-block-item p {
+    line-height: 24px;
+    letter-spacing: 0.2px;
 }
+
 .track {
     background-color: #0070A0;
+    padding: 80px 0;
     color: #FFFFFF;
+    
 }
-.track-flex {
+.track-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 0;
+    font-weight: 200;
 }
-.track-block {
-    width: 500px;
-}
-.track-block h2 {
-    font-size: 42px;
+.track-block-info h2 {
     margin-bottom: 21px;
+    width: 350px;
 }
-.track-block p{
+.track-block-info p {
     font-size: 18px;
+    margin-bottom: 17px;
+    width: 480px;
 }
-.track-list {
-    margin: 16px 0 25px 0;
-    padding-left: 25px;
+.track-block-info button {
+    font-size: 17px;
+    letter-spacing: 0.2px;
+    font-weight: 200;
+
 }
-.track-list li {
+.track-block-list li:nth-child(2) {
+    margin: 11px 0;
+}
+.track-block-list li {
     list-style-image: url(assets/mark.svg);
 }
-.track-list li:nth-child(2){
-    margin: 11px 0;
+.track-block-list {
+    padding-left: 25px;
+    margin-bottom: 27px;
+}
+h2 {
+    font-size: 42px;
+}
+.task-title {
+    margin: 120px auto 21px auto;
+}
+.task-text {
+    width: 640px;
+    font-size: 18px;
+    line-height: 27px;
+}
+.task-block {
+    display: flex;
+    margin: 65px auto 120px auto;
+    justify-content: space-between;
+}
+.task-block-item {
+    width: 200px;
+}
+
+.task-block-item h3 {
+    margin: 13px auto;
+}
+h3 {
+    font-size: 25px;
+}
+
+.blog {
+    background-color:#F7F9FA;
+    padding: 80px 0;
+}
+.posts {
+    display: flex;
+    justify-content: space-between;
+}
+.post {
+    background-color:#FFFFFF ;
+    width:360px ;
+}
+.post-block {
+    padding: 25px 24px 28px 24px;
+}
+.post-title {
+    background-color:#E6F7FF ;
+    color:#2C90C9;
+    padding: 2px 12px 4px 12px ;
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 400;
 }
